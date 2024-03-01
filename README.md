@@ -40,8 +40,8 @@ We can see that some players install the game but then never play it (0 game rou
 
 ==> The higher 1-day retention is, the easier it is to retain players and build a large player base.
 
-### 2. Calculate 1-day retention:
-* Overall 1-day retention: **0.4452%**
+### 2. Calculate 1-day retention and its confidence
+* Overall 1-day retention: **0.4452**
 * ==> A little less than half of the players come back one day after installing the game.
 * 1-day retention between two groups (gate_30) and (gate_40)
 
@@ -49,11 +49,25 @@ We can see that some players install the game but then never play it (0 game rou
 
 * It appears that there was a slight decrease in 1-day retention when the gate was moved to level 40 (44.2%) compared to the control when it was at level 30 (44.8%). It's a small change, but even small changes in retention can have a large impact.
 
-### 3. Bootstrapping: 
 * We will repeatedly re-sample our dataset (with replacement) and calculate 1-day retention for those samples. The variation in 1-day retention will give us an indication of how uncertain the retention numbers are.
- 
-![Untitled](https://github.com/Khangtran94/Mobile_Games_AB_Testing_with_Cookie_Cats/assets/146164801/33122e26-bbc5-41b4-995e-731740e581c9)
 
-![image](https://github.com/Khangtran94/Mobile_Games_AB_Testing_with_Cookie_Cats/assets/146164801/4036aa9f-0b6a-40a7-b0a4-0a3cf5fe4438)
- 
+![image](https://github.com/Khangtran94/Mobile_Games_AB_Testing_with_Cookie_Cats/assets/146164801/c75a9614-2388-4a35-9449-ddfc41347e8a)
+* ==> We can see that the most likely % difference is around 1% - 2%, and that most of the distribution is above 0%, in favor of a gate at level 30
+* **Probability** that the difference above 0% is: **0.964**
+
+### 3. Calculate 7-day retention and its confidence
+* 7-day retention between two groups (gate_30) and (gate_40)
+
+![Untitled](https://github.com/Khangtran94/Mobile_Games_AB_Testing_with_Cookie_Cats/assets/146164801/a3e568aa-8d08-4927-9b9a-d67dd0bc90d2)
+
+* Like with 1-day retention, we see that 7-day retention is slightly lower (18.2%) when the gate is at level 40 than when the gate is at level 30 (19.0%).
+* This difference is also larger than for 1-day retention, presumably because more players have had time to hit the first gate.
+* We also see that the overall 7-day retention is lower than the overall 1-day retention; fewer people play a game a week after installing than a day after installing.
+
+![image](https://github.com/Khangtran94/Mobile_Games_AB_Testing_with_Cookie_Cats/assets/146164801/9f50e438-dac6-4dfc-9ef8-ab0cb0de3ea5)
+
+* ==> there is strong evidence that 7-day retention is higher when the gate is at level 30 than when it is at level 40
+* **Probability** that the difference above 0% is: **100**
+  
 # Conclusion:
+* If we want to keep retention high — both 1-day and 7-day retention — we should not move the gate from level 30 to level 40.
