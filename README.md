@@ -12,7 +12,7 @@ But where should the gates be placed? Initially the first gate was placed at lev
 
 ## Business goals
 
-Conduct an A/B test in Cookie Cats to determine the optimal placement of gates and its impact on player retention.
+Conduct an A/B test in Cookie Cats, evaluating the optimal placement of encounter gates (forcing wait times or in-app purchases) and their impact on player retention.
 
 ### Methods Used:
 * Hypothesis Testing
