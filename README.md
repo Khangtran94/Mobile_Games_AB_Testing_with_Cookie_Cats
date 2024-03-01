@@ -29,18 +29,31 @@ The dataset has **90189 rows** and **5 columns**
 Number of player for each gate option:
 
 ![github](https://github.com/Khangtran94/Mobile_Games_AB_Testing_with_Cookie_Cats/assets/146164801/28b12fda-f83d-4d49-90bf-a60e7ef19ae8)
+## Statistical step:
+### 1. The distribution of the number of game rounds players played during their first week playing the game.
 
-## Data Validation:
+![Untitled](https://github.com/Khangtran94/Mobile_Games_AB_Testing_with_Cookie_Cats/assets/146164801/26ffb09c-6f4c-4484-8743-5ad93eb83f25)
 
+We can see that some players install the game but then never play it (0 game rounds), some players just play a couple of game rounds in their first week, and some get really hooked!
 
+==> **1-day retention**: The percentage of players that comes back and plays the game one day after they have installed it. 
 
-## Exploratory data analysis (EDA):
+==> The higher 1-day retention is, the easier it is to retain players and build a large player base.
 
+### 2. Calculate 1-day retention:
+* Overall 1-day retention: **0.4452%**
+* ==> A little less than half of the players come back one day after installing the game.
+* 1-day retention between two groups (gate_30) and (gate_40)
 
+![Untitled](https://github.com/Khangtran94/Mobile_Games_AB_Testing_with_Cookie_Cats/assets/146164801/15ceb54a-e375-4ee8-b366-76d554a09932)
 
+* It appears that there was a slight decrease in 1-day retention when the gate was moved to level 40 (44.2%) compared to the control when it was at level 30 (44.8%). It's a small change, but even small changes in retention can have a large impact.
 
+### 3. Bootstrapping: 
+* We will repeatedly re-sample our dataset (with replacement) and calculate 1-day retention for those samples. The variation in 1-day retention will give us an indication of how uncertain the retention numbers are.
+ 
+![Untitled](https://github.com/Khangtran94/Mobile_Games_AB_Testing_with_Cookie_Cats/assets/146164801/33122e26-bbc5-41b4-995e-731740e581c9)
 
-# Recommendations for future action:
-* We suggest to deploy the Logistic Regression model to the recent recipes. With approximately 78% in predict high-traffic recipes, this predictive model can assist the product manager reaches the business goals in generating more traffic to the websit and boost overall performances.
-* Both models suggest that category is the main feature affecting the traffic. Therefore, we should try to increase the number of categories and create more meaningful features from existing variables.
-* To improve the accuracy, we should collect more information, such as more details about time to cost, cost per servings, and also the combination of ingredients.
+![image](https://github.com/Khangtran94/Mobile_Games_AB_Testing_with_Cookie_Cats/assets/146164801/4036aa9f-0b6a-40a7-b0a4-0a3cf5fe4438)
+ 
+# Conclusion:
