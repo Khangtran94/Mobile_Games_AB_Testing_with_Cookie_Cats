@@ -10,7 +10,7 @@ As players progress through the levels of the game, they will occasionally encou
 
 But where should the gates be placed? Initially the first gate was placed at level 30,  we're going to analyze an AB-test where we moved the first gate in Cookie Cats from level 30 to level 40. In particular, we will look at the impact on player retention.
 
-## Business goals
+## Project Objective:
 
 Conduct an A/B test in Cookie Cats, evaluating the optimal placement of encounter gates (forcing wait times or in-app purchases) and their impact on player retention.
 
