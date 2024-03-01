@@ -29,7 +29,7 @@ The dataset has **90189 rows** and **5 columns**
 Number of player for each gate option:
 
 ![github](https://github.com/Khangtran94/Mobile_Games_AB_Testing_with_Cookie_Cats/assets/146164801/28b12fda-f83d-4d49-90bf-a60e7ef19ae8)
-## Statistical step:
+# Statistical step:
 ### 1. The distribution of the number of game rounds players played during their first week playing the game.
 
 ![Untitled](https://github.com/Khangtran94/Mobile_Games_AB_Testing_with_Cookie_Cats/assets/146164801/26ffb09c-6f4c-4484-8743-5ad93eb83f25)
